@@ -55,7 +55,7 @@
                 alert(`Resultado da multiplicação é igual à ${resultado}`)
             } else if (op = '/') {
                 resultado = dividir(n1, n2);
-                alert(`Resultado da subtração é igual à ${resultado}`)
+                alert(`Resultado da divisão é igual à ${resultado}`)
             }
 
             //criar uma variável com o resultado da soma
@@ -69,13 +69,17 @@
             return x - y;
         }
         function somar(x, y) {
-            return x - y;
+            return x + y;
         }
         function multiplicar(x, y) {
-            return x - y;
+            return x * y;
         }
         function dividirt(x, y) {
-            return x - y;
+            if(y == 0){
+                return resultado = 0
+            } else {
+                return x / y;
+            }
         }
     </script>
 
