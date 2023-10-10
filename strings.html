@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Criar um formulário para receber o nome do usuário-->
+    <!--Substituir por um nickname-->
+    <!--Ao clicar no botão o nickname dave ser exibidona tela-->
+
+    <form onsubmit="exibirApelido()">
+        <label for="nome">Digite seu Nome</label>
+        <input type="text" id="nome">
+
+        <label for="nickname">Digite seu Nickname</label>
+        <input type="text" id="nickname">
+        <button onclick="exibirApelido()">Exibir</button>
+
+        <p id="res-nick"> </p>
+    </form>
+    
+
+    <!--<button onclick="alert('Olá, ${nome}')">Dois reais</button>-->
+
+    <script>
+        event.preventDefault
+        let name = document.getElementById('nome').value;
+        let nick = document.getElementById('nickname').value;
+        //let exibir = `Olá, ${nome.replace(nome, nick)}`;
+        document.getElementById('res-nick').innerHTML = nome.replace(nome, `Olá, ${nick}`);
+
+        //function exibirApelido() {
+            //var nome = window.document.getElementById('nome').value;
+            //alert(`Olá, ${nome} `)
+        //}
+    </script>
+
+
+</body>
+
+</html>
